@@ -5,6 +5,7 @@
         <title>Level 1 Click Jack</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="http://www.darkskiesawareness.org/img/wwf-logo.gif"/>
     </head>
 
     <style>
@@ -19,27 +20,57 @@
             padding: 100px;
             background-color: rgba(25, 25, 25, .5);
             font-family: Raleway, "Helvetica-Neue", Helvetica, sans-serif;
-            font-size: 18px;
             color: white;
             font-weight: 300;
             text-align: right;
         }
 
+        #nav {
+            background: black;
+            padding: 40px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        p {
+            display: none;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
         button {
+            color: black;
             float: right;
+            margin: 15px;
+            font-size: 150%;
+        }
+
+        img {
+            width: 90px;
+            position: absolute;
+            top: 0px;
+            left: 140px;
         }
     </style>
 
     <body>
         <main class="container-fluid">
-            <header class="row">
+            <div class="row">
+                <div id="nav" class="col-md-12"><p>TEST</p></div>
+                <img src="http://www.darkskiesawareness.org/img/wwf-logo.gif" alt="logo"/>
                 <div>
-                    <h1 class="col-md-12">BENGAL TIGERS</h1>
-                    <h3 class="col-md-12">HELP SAVE THE TIGERS</h3>
-                    <p class="col-md-12">Right now, there are more tigers in captivity<br>than there are left in the world.</p>
-                    <button>ENTER</button>
+                    <h1 class="col-md-12">PLEASE HELP SAVE<br>THE BENGAL TIGERS</h1>
+                    <h2 class="col-md-12">Right now, there are more tigers in captivity<br>than there are left in the world.</h2>
+                    <button type="button" class="btn btn-success">PLEASE DONATE</button>
                 </div>
-            </header>
+            </div>
         </main>
     </body>
 </html>
